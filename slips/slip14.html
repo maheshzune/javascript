@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <script>
+        function validateLogin(event){
+            event.preventDefault();
+
+            var a=document.getElementById('username').value;
+            var b=document.getElementById('password').value;
+
+            if(a===b){
+                window.location.href="sc.html";
+            }
+            else{
+                alert('wrong username and password')
+            }
+        }
+    </script>
+</head>
+<body>
+    <h2>Login</h2>
+    <form onsubmit="validateLogin(event)">
+        Username:
+        <input type="text" id="username" name="username" required><br><br>
+        Password:
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" >
+    </form>
+
+    
+</body>
+</html>

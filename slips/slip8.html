@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" id="a" placeholder="enter string">
+        <input type="text" id="b" placeholder="enter character">
+        <br>
+        <br>
+        <button onclick="volume()"> check </button>
+        <p id="c"></p>
+        <script>
+            function volume(){
+            var a=document.getElementById('a').value;
+            var b=document.getElementById('b').value;
+            var n=a.length;
+            var cnt=0;
+            for(var i=0;i<n;i++){
+                if(a[i]==b){
+                    cnt++;
+                }
+            }
+        
+            if(cnt>=1){
+                document.getElementById('c').innerHTML='total :'+b+': in string are :'+cnt;
+            }
+            }
+        </script>
+
+</body>
+</html>

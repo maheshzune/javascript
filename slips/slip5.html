@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" id="a" placeholder="check no. is perfect or not">
+        <br>
+        <br>
+        <button onclick="volume()"> check </button>
+        <p id="b"></p>
+        <script>
+            function volume(){
+            var a=document.getElementById('a').value;
+            var number=a;
+            var h=0;
+            for(var i=1;i<a;i++){
+                
+                if((number%i)===0){
+                     h=h+i;
+                }
+                
+            }
+            if(number==h){
+                document.getElementById('b').innerHTML=number+': is perfect number';
+            }
+            else{
+                document.getElementById('b').innerHTML=number+': is not perfect number';
+            }
+        
+        }
+        </script>
+
+</body>
+</html>

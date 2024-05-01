@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" id="a" placeholder="check no. is palindrome or not">
+        <br>
+        <br>
+        <button onclick="volume()"> check </button>
+        <p id="b"></p>
+        <script>
+            function volume(){
+            var a=document.getElementById('a').value;
+             a=parseInt(a);
+             var n=a;
+            var cnt=0;
+            while(a!==0){
+               var c=a%10;
+               cnt=cnt*10+(c);
+               a=Math.floor(a/10);
+        
+            }
+            if(n===cnt){
+                document.getElementById('b').innerHTML=n+' : is palindrome number.';
+            }
+            else{
+                document.getElementById('b').innerHTML=n+' : is not palindrome number.';
+            }
+        }
+        </script>
+
+</body>
+</html>

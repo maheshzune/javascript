@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cc">
+    <br>
+    <input type="text" id="a">
+    <br>
+    <button onclick="volume()"> calculate</button>
+    <p id="b"></p>
+</div>
+    <script>
+        function volume(){
+            var a=document.getElementById('a').value;
+            var c=0;
+            while(a!=0){
+                  var b=a%10;
+                 c=c+b;
+                 a=Math.floor(a/10);
+                }
+                
+                document.getElementById('b').innerHTML=c;
+        }
+    </script>
+</body>
+</html>

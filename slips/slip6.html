@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device_width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <input type="text" id="a" placeholder="check no. is perfect or not">
+        <br>
+        <br>
+        <button onclick="volume()"> check </button>
+        <p id="b"></p>
+        <script>
+            function volume(){
+            var a=document.getElementById('a').value;
+            var number=a;
+            var cnt=0;
+            for(var i=2;i<a;i++){
+                
+                if((number%i)===0){
+                  cnt++;
+            }
+        }
+            if(cnt>=1){
+                document.getElementById('b').innerHTML=number+': is not prime number';
+            }
+            else{
+                document.getElementById('b').innerHTML=number+': is prime number';
+            }
+        
+        }
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cc">
+        <br>
+        <input type="text" id="a">
+        <br>
+        <button onclick="volume()"> calculate</button>
+        <p id="b"></p>
+        <script>
+            function volume(){
+            var a=document.getElementById('a').value;
+            var number=a;
+            var leng=number.length;
+            var d=0;
+            while(a!=0){
+                var b=a%10;
+                d=d+Math.pow(b,leng);
+                a=Math.floor(a/10);
+            }
+            if(number==d){
+                document.getElementById('b').innerHTML=number+': is armstrong number';
+            }
+            else{
+                document.getElementById('b').innerHTML=number+': is not armstrong number';
+            }
+        }
+        </script>
+
+</body>
+</html>
