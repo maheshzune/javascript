@@ -37,4 +37,15 @@ const regularuser = {
      }
 }
 
-console.log(regularuser.username.userfullname.surnam)
+// console.log(regularuser.username.userfullname.surnam)
+
+const obj1 ={1:'a',2:'b'}
+const obj2 ={4:'a',3:'b'}
+
+const obj3 =Object.assign({},obj1,obj2)
+console.log(obj3);
+console.log(obj1);
+
+
+//*******************object 3++++++++++++++++++++++++++++++++++ */
+
