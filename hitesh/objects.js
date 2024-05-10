@@ -49,3 +49,10 @@ console.log(obj1);
 
 //*******************object 3++++++++++++++++++++++++++++++++++ */
 
+const course ={
+     name: 'javascript',
+     teacher: 'mahesh zune ',
+     price : '999',
+}
+const {  teacher: teacher}=course;
+console.log(teacher);
